@@ -1,0 +1,1138 @@
+@font-face
+    font-family: ProximaNova
+    src: url('../fonts/ProximaNova-Regular.ttf')
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap')
+body
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: flex-end
+    .right_block
+        width: fill-available
+    .krest, .krest_dbl
+        display: none
+
+    .header
+        background: linear-gradient(157.41deg, #03D5AE 14.63%, #4697CC 90.29%)       
+        
+        .form_dn
+            display: none
+        &__info_client_dbl
+            display: none
+        &__wrap_info
+            display: flex
+            justify-content: space-between
+            width: 100%
+            padding-left: 7%
+            padding-right: 7%
+            padding-top: 25px
+        .form_spec_block
+            display: none
+        &__load_app_db
+            display: none
+        &__info
+            display: flex
+            align-items: center
+        &__person_account
+            display: flex
+        &__info_dbl
+            display: none
+        p
+            margin: 0
+        .form_date_block
+            display: none
+        &__number_dbl
+            display: none
+        &__btn_appstore, &__btn_gp
+            display: flex
+            padding: 0
+            border: 2px solid #FFFFFF;
+            background: none
+            border-radius: 7px
+            color: #ffffff
+            height: max-content;
+            padding-left: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 20px;
+            margin-left: 10px
+        &__btn_appstore img
+            zoom: 70%
+            padding-right: 10px
+        &__load_app, &__load_app_dbl
+            font-family: ProximaNova, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #3060A0;
+        .wrap-mob-menu
+            display: none
+        &__load_app_dbl
+            margin-top: -4% !important
+        &__account_title, &__account_title_dbl
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+        &__title, &__title_dbl
+            font-family: Cera Round Pro DEMO, sans-serif;
+            line-height: 100%
+            color: #ffffff
+        &__title_info
+            margin-top: 90px
+        &__btn_wrap
+            display: flex
+            justify-content: center
+            padding-bottom: 48px
+        &__check
+            display: flex
+            align-self: center
+        &__img_recaptcha
+            zoom: 85%
+
+        &__wrap_check
+            display: flex
+            justify-content: center
+            margin-bottom: 0;
+            margin-top: -10px
+            background: #FFFFFF;
+            border-radius: 5px;
+            padding-bottom: 14px;
+            margin-left: 5px;
+            margin-right: 5px;
+        &__gp_img
+            zoom: 70%;
+            display: flex;
+            align-self: center;
+            padding-right: 10px
+        .row
+            display: flex
+            justify-content: center
+        &__title
+            letter-spacing: 2px
+            font-size: 64px;
+        &__title_dbl
+            font-size: 62px
+            letter-spacing: 1px
+        &__info_client
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            padding-bottom: 30px
+            color: #FFFFFF;
+        &__number
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        &__info_form
+            font-family: ProximaNova, sans-serif;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        &__wrap_title
+            text-align: center
+            display: flex
+            justify-content: center
+            margin-top: 110px
+        &__wrap_info_title
+            display: flex
+            align-items: center   
+        &__db
+            background: #FFFFFF;
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            padding-left: 96px
+            padding-right: 96px
+            margin-top: 13px
+            margin-bottom: 75px
+            width: 90%
+
+        &__title_wrap_form 
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 38px;
+            letter-spacing: 0.01em;
+            color: #3060A0;
+            padding-top: 25px
+        &__btn_swipe_wrap
+            display: flex
+            justify-content: center
+            margin-top: -4%
+        &__btn_swipe
+            background: linear-gradient(157.41deg, #03D5AE 14.63%, #4697CC 90.29%);
+            border: 4px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 50%
+            width: 75px;
+            height: 75px;
+        &__btn_swipe img
+            padding-top: 33%;
+            padding-left: 18%;
+        &__textarea
+            height: 200px;
+            padding-bottom: 170px;
+        .btn
+            width: 325px;
+            height: 50px;
+            background: #3EC29F;
+            border-radius: 5px;
+            border: none
+        &__conf
+            font-size: 10px
+            font-family: ProximaNova;
+            line-height: 15px;
+            letter-spacing: 0.02em;
+            color: #3091DA;
+        input::placeholder 
+            overflow: visible;
+            color: #2D9CDB !important;
+        select
+            color: #2D9CDB !important
+        &__check_text
+            color: #3091DA
+        &__date
+            text-align: right
+        input[type=text], select, input[type=email],
+        input[type=password]
+            background-color: #F6F7FB
+        &__recaptcha_wrap
+            padding-left: 0
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-left: 17px
+        &__recaptcha_wrap img
+            zoom: 80%
+        &__check_label
+            display: flex
+            align-self: center
+            font-size: 18px
+        &__load_wrap
+            padding-left: 10px
+        &__person
+            padding-left: 10px
+        .label_textarea
+            display: none
+    .menu
+        &__link
+            padding-left: 10px;
+            padding-top: 5px;
+        .box_img
+            zoom: 75%
+    .header
+
+        .d_nowrap
+            display: flex
+            flex-wrap: nowrap
+        .toggle
+            --uiToggleSize: var(--toggleSize, 20px);
+            --uiToggleIndent: var(--toggleIndent, .4em);
+            --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+            --uiToggleColor: var(--toggleColor, #000);
+            --uiToggleDisabledColor: var(--toggleDisabledColor, #868e96);
+            --uiToggleBgColor: var(--toggleBgColor, #fff);
+            --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+            --uiToggleArrowColor: var(--toggleArrowColor, #fff);
+            display: inline-block;
+            position: relative;
+        
+        .toggle__input
+            display: none
+
+        .toggle__label
+            padding-top: 20px;
+            padding-left: 35px;
+            display: inline-flex;
+            cursor: pointer;
+            min-height: var(--uiToggleSize);
+            padding-left: calc(var(--uiToggleSize) + var(--uiToggleIndent));
+        
+        .toggle__label:before, .toggle__label:after
+            content: "";
+            box-sizing: border-box;
+            width: 25%;
+            height: 80%;
+            font-size: var(--uiToggleSize);
+            position: absolute;
+            left: -10%;
+            top: 32%;
+
+        .toggle__label:before
+            border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+            z-index: 2;
+            
+        .toggle__input:disabled ~ .toggle__label:before
+            border-color: var(--uiToggleDisabledColor);
+        
+
+        .toggle__input:focus ~ .toggle__label:before
+            box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+        
+
+        .toggle__input:not(:disabled):checked:focus ~ .toggle__label:after
+            box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+        
+
+        .toggle__input:not(:disabled) ~ .toggle__label:after
+            //background-color: var(--uiToggleColor);
+            opacity: 0;
+            background: #FFFFFF;
+            border: 2px solid #4672A7;
+            box-sizing: border-box;
+            border-radius: 5px;
+                    
+
+        .toggle__input:not(:disabled):checked ~ .toggle__label:after
+            opacity: 1;
+        
+        .toggle__text
+            margin-top: auto;
+            margin-bottom: auto;
+        
+        .toggle__text:before
+            content: "";
+            box-sizing: border-box;
+            width: 0;
+            height: 0;
+            font-size: 70px;
+            border-left-width: 0;
+            border-bottom-width: 0;
+            border-left-style: solid;
+            border-bottom-style: solid;
+            border-color: #4672A7;
+            position: absolute;
+            top: 60%;
+            left: -5%;
+            z-index: 3;
+            transform-origin: left top;
+            transform: rotate(-40deg) skew(10deg);
+        
+
+        .toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before
+            width: .5em;
+            height: .25em;
+            border-left-width: var(--uiToggleArrowWidth);
+            border-bottom-width: var(--uiToggleArrowWidth);
+            will-change: width, height;
+            transition: width .1s ease-out .2s, height .2s ease-out;
+        
+
+
+
+        .toggle__label:before, .toggle__label:after
+            border-radius: 2px;
+        
+
+
+        .toggle__input:not(:disabled) ~ .toggle__label:before,
+        .toggle__input:not(:disabled) ~ .toggle__label:after
+            opacity: 1;
+            transform-origin: center center;
+            will-change: transform;
+            transition: transform .2s ease-out;
+        
+
+        .toggle__input:not(:disabled) ~ .toggle__label:before
+            transform: rotateY(0deg);
+            transition-delay: .2s;
+            background: #FFFFFF;
+            border: 2px solid #4672A7;
+            box-sizing: border-box;
+            border-radius: 5px;
+        
+
+        .toggle__input:not(:disabled) ~ .toggle__label:after
+            transform: rotateY(90deg);
+        
+
+        .toggle__input:not(:disabled):checked ~ .toggle__label:before
+            transform: rotateY(-90deg);
+            transition-delay: 0s;
+            background: #FFFFFF;
+            border: 2px solid #4672A7;
+            box-sizing: border-box;
+            border-radius: 5px;
+        
+
+        .toggle__input:not(:disabled):checked ~ .toggle__label:after
+            transform: rotateY(0deg);
+            transition-delay: .2s;
+        
+
+        .toggle__text:before
+            opacity: 0;
+        
+
+        .toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before
+            opacity: 1;
+            transition: opacity .1s ease-out .3s, width .1s ease-out .5s, height .2s ease-out .3s;
+        
+
+        .toggle
+            --toggleColor: #4672A7;
+            --toggleBgColor:  #4672A7;
+            --toggleSize: 40px;
+        .hidden-menu-ticker, .hidden-menu
+            display: none
+        .hidden-menu
+            background-color: #fff
+      
+    .works
+        .row
+            display: flex
+            justify-content: center
+        &__title
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 56px;
+            text-transform: capitalize;
+            color: #3060A0;
+        &__title_info
+            font-family: ProximaNova, sans-serif;
+            font-size: 16px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #03D5AE
+            padding-left: 20%
+            padding-right: 20%
+        &__wrap
+            margin-top: 58px
+    .our_works
+        background-image: url('../img/bg_vector.png')
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 100%;
+        padding-bottom: 100px
+        .slider
+            display: none
+        &__service_wrap
+            padding-top: 60px
+        &__service
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px #E2E2E2;
+            border-radius: 10px;
+        &__date
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #03D5AE;
+            margin: 0
+        &__info_text
+            font-family: ProximaNova, sans-serif;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0.03em;
+            color: #436FA5;
+            padding-left: 34px
+            padding-right: 24px
+            padding-bottom: 24px
+        &__service_title
+            font-family: ProximaNova, sans-serif;
+            font-size: 20px;
+            line-height: 34px;
+            letter-spacing: 0.01em;
+            color: #3060A0;
+            padding-top: 24px
+            font-weight: bold
+            margin: 0
+            padding-bottom: 3px
+        &__name
+            font-family: ProximaNova, sans-serif;
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: 0.01em;
+            color: #3060A0;
+            margin: 0
+            padding-bottom: 14px
+        &__name span
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: 0.01em;
+            color: #3091DA
+        &__service_wrap_info, &__wrap_name
+            padding-left: 34px
+            padding-right: 34px
+        &__service_wrap_info
+            display: flex
+            justify-content: space-between;
+            padding-bottom: 14px;
+        &__stars_wrap
+            zoom: 75%
+        &__wrap_date
+            padding-top: 5px
+    .footer
+        background-image: url('../img/bg_footer.png')
+        background-size: cover
+        background-repeat: no-repeat
+        .slide_none
+            display: none
+        &__mobile
+            display: none
+        .row
+            display: flex
+            justify-content: space-between
+            padding-top: 50px
+        p
+            margin: 0
+        .footer_db_load, .footer_db_contact
+            display: none
+        &__wrap_title p, &__wrap_title span
+            font-family: 'Cera Round Pro DEMO', sans-serif;
+            font-size: 26px;
+            line-height: 96.5%;
+            color: #FFFFFF;
+        &__wrap_title
+            display: flex
+            align-items: center
+            padding-bottom: 10px
+        &__wrap_title p
+            letter-spacing: 2px
+        &__wrap_title span
+            letter-spacing: 1px
+        &__wrap_info p
+            font-family: ProximaNova, sans-serif;
+            font-size: 16px;
+            line-height: 96.5%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        &__number
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        &__mail
+            font-family: ProximaNova, sans-serif;
+            font-size: 18px;
+            line-height: 29px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            font-weight: bold
+        &__wrap_dbl_menu ul li a
+            font-family: ProximaNova, sans-serif;
+            font-size: 18px;
+            line-height: 29px;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+        ul
+            list-style: none
+            margin: 0
+        &__load
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        &__btn_appstore
+            display: flex
+            background: #FFFFFF;
+            border: 2px solid #000015;
+            border-radius: 7px;
+            color: #ffffff;
+            height: -webkit-max-content;
+            height: -moz-max-content;
+            height: max-content;
+            padding-left: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 20px;
+        &__title_app
+            color: #000000
+        &__load_app, &__load_app_dbl
+            color: #ffffff
+        &__btn_appstore img
+            padding-right: 10px
+        &__btn_gp
+            display: flex;
+            background: #FFFFFF;
+            border: 2px solid #000015;
+            border-radius: 7px;
+            color: #ffffff;
+            height: max-content;
+            padding-left: 20px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 20px;
+            margin-left: 10px
+        &__btn
+            zoom: 85%;
+            padding-right: 10px;
+
+        &__company_info
+            font-family: ProximaNova, sans-serif
+            font-size: 14px !important
+            line-height: 96.5%
+            letter-spacing: 0.06em !important
+            color: #FFFFFF
+        &__wrap_btn
+            display: flex
+        &__load_info
+            padding-bottom: 10px
+        &__copy_wrap
+            display: flex
+            justify-content: normal
+            padding-bottom: 15px
+        &__politic_title,&__copyright, &__year, &__order 
+            font-family: ProximaNova, sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            color: #CAC7C7;
+        &__copy_title
+            display: flex
+        &__copy_wrap
+            padding-top: 44px
+            display: flex
+            justify-content: space-evenly
+        &__year
+            padding-left: 5px
+    .menu
+        &__top
+            height: 96px
+            width: 100%
+            background: #3060A0
+        &__title_link
+            padding-left: 30px
+            padding-right: 30px
+            padding-top: 20px
+            padding-bottom: 20px
+            display: flex
+            align-items: center
+            border-bottom: 2px solid #ECF0F1
+            font-family: ProximaNova, sans-serif;
+            font-size: 18px;
+            line-height: 29px;
+            letter-spacing: 0.005em;
+            color: #3060A0;
+
+        &__title_link_dbl
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 14px;
+            padding-bottom: 0px;
+            font-family: ProximaNova, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.005em;
+            color: #3060A0;
+
+
+
+            
+@media screen and (max-width:1920px) and (min-width:1440px)
+    .header
+
+        &__textarea_dbl
+            display: none
+        .input_adress_dbl, .input_spec_dbl, .input_date_dbl
+              display: none
+        .input_spec, .input_date
+            display: block
+        
+
+@media screen and (max-width:1440px)
+    .header
+        .input_adress, .input_date, .input_spec,
+        .input_recaptcha
+            display: none
+        .label_textarea
+            display: block
+        .label_textarea_dbl
+            display: none
+        .d_nowrap
+            display: flex !important
+            flex-wrap: wrap !important
+        &__textarea
+            display: none
+        &__textarea_dbl
+            display: block
+            height: 200px;
+            padding-bottom: 170px;
+            margin-left: 5px
+            margin-right: 5px
+            margin-top: 25px
+            margin-bottom: 20px
+        .btn
+            background: #3060A0 !important
+    .footer
+        position: absolute;
+        width: fill-available;
+        left: 0%;
+
+@media screen and (max-width:1350px)
+    .header
+        &__wrap_check
+            display: grid !important
+            grid-auto-columns: max-content !important
+            justify-content: stretch !important
+
+@media screen and (max-width:1024px)
+    .left_block
+        display: none
+    .header
+
+        .d_nowrap
+            display: flex !important
+            flex-wrap: wrap !important
+        .hidden-menu
+            display: block;
+            position: fixed;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            box-sizing: border-box;
+            width: 200px;
+            background-color: #eee;
+            height: 100%;
+            top: 0;
+            left: -200px;
+            transition: left .2s;
+            z-index: 2;
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            padding: 0 
+        .hidden-menu-ticker
+            display: none;
+        .btn-menu
+            color: #fff;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 7px;
+            padding: 5px;
+            position: fixed
+            top: 7px;
+            left: 40px;
+            cursor: pointer;
+            transition: left .23s;
+            z-index: 3;
+            width: 5%;
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+
+        .btn-menu span
+            display: block;
+            height: 2.5px;
+            background-color: #fff;
+            margin: 7px 0 0;
+            transition: all .1s linear .23s;
+            position: relative;
+
+        .btn-menu span.first
+            margin-top: 0;
+        .hidden-menu-ticker:checked ~ .btn-menu
+            left: 140px;
+            
+        .hidden-menu-ticker:checked ~ .hidden-menu
+            left: 0;
+
+        .hidden-menu-ticker:checked ~ .btn-menu span.first
+            -webkit-transform: rotate(45deg);
+            top: 10px;
+            
+        .hidden-menu-ticker:checked ~ .btn-menu span.second
+            opacity: 0;
+            
+
+        .hidden-menu-ticker:checked ~ .btn-menu span.third
+            -webkit-transform: rotate(-45deg);
+            top: -10px;
+    .menu
+        &__title_link
+            border-bottom: 2px solid #ECF0F1 !important
+            font-family: ProximaNova, sans-serif;
+            padding-left: 15px !important
+            padding-right: 0 !important
+        .img_box
+            zoom: 85%
+        &__top
+            background: linear-gradient(257.12deg, #4B9ADF 0%, #31D69B 100%) !important
+        &__wrap_img
+            display: flex
+        &__title, &__title_dbl
+            font-family: Cera Round Pro DEMO, sans-serif;
+            line-height: 100%;
+            color: #ffffff;
+        &__title
+            font-size: 29px;
+            padding-bottom: 0px;
+        &__title_dbl
+            font-size: 28px
+        &__top
+            height: 140px !important
+        &__wrap_img
+            padding-top: 50px;
+            padding-left: 5px;
+
+    .header
+        .hidden-menu
+            display: block !important
+        .wrap-mob-menu
+            display: flex !important
+            justify-content: flex-end
+            backdrop-filter: blur(15px);
+            background: rgba(196, 196, 196, 0.49);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            position: fixed
+            width: 100%
+            z-index: 1
+        &__person_account_dbl
+            display: flex
+            zoom: 75%;
+            padding-right: 40px;
+        &__person_account
+            display: none !important
+        &__person_link p
+            font-family: 'Work Sans', sans-serif    
+            color: #3060A0;
+        &__wrap_info
+            display: flex
+            justify-content: center !important
+            padding-top: 85px !important
+
+        &__load_app, &__load_app_dbl
+            color: #ffffff !important
+        
+    .footer
+        &__wrap_dbl_menu
+            display: none
+        &__company_info
+            display: none
+@media screen and (max-width:990px)
+    .krest, .krest_dbl
+        position: absolute
+        display: flex !important
+    .wrap_two
+        margin-top: 1053%;
+        padding-right: 26%;
+    .wrap_one
+        margin-top: 923%;
+    .wrap_one img
+        zoom: 64%
+    .wrap_two img
+        zoom: 120%
+    .wrap_three
+        margin-top: 1026%;
+        padding-left: 25%;
+    .wrap_four
+        margin-top: 700%
+    .wrap_three img
+        zoom: 130%
+    .wrap_four img
+        zoom: 80%
+    form
+        width: 100% !important
+        background-color: #FFFAFA !important
+    .footer
+        .container
+            max-width: 90%
+        &__number
+            font-size: 20px !important
+        &__mail
+            font-size: 16px !important
+    .works
+        &__title_info
+            padding: 0 !important
+    .our_works
+        .dn
+            display: none
+    .menu
+        &__title_link
+            border-bottom: 2px solid #ECF0F1 !important
+            font-family: ProximaNova, sans-serif;
+        &__top
+            background: linear-gradient(257.12deg, #4B9ADF 0%, #31D69B 100%) !important
+    .header
+        &__db
+            padding-left: 50px !important
+            padding-right: 50px !important
+        .hidden-menu
+            display: block !important
+        .wrap-mob-menu
+            display: flex !important
+            justify-content: flex-end
+            backdrop-filter: blur(15px);
+            background: rgba(196, 196, 196, 0.49);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        &__person_account_dbl
+            display: flex
+            zoom: 75%;
+            padding-right: 40px;
+        &__person_account
+            display: none !important
+        &__person_link p
+            font-family: 'Work Sans', sans-serif    
+            color: #3060A0;
+        &__wrap_info
+            display: flex
+            justify-content: center !important
+        &__load_app, &__load_app_dbl
+            color: #ffffff !important
+    .footer
+        &__company_info
+            display: none
+        &__wrap_contact
+            margin-top: -5px
+        &__wrap
+            zoom: 85%
+
+@media screen and (max-width:975px)
+    .header
+        &__wrap_check
+            display: flex !important
+            justify-content: center !important
+    .our_works
+
+
+
+@media screen and (max-width:768px)
+    .header
+        &__date
+            text-align: left !important
+        &__btn_swipe
+            display: none !important
+        &__db
+            margin-bottom: -59px !important
+        .form_date_block
+            display: block !important
+        .input_spec_dbl, .date_dbl, .dn_adress, .dn_pol
+            display: none !important
+        .form_spec_block
+            display: block !important
+    .footer
+        &__copy_wrap
+            display: none !important
+        &__mobile
+            display: flex !important
+            margin-bottom: 30px;    
+            display: flex !important;
+            justify-content: center;
+        &__politic_title_wrap
+            text-align: center
+        .row
+            display: flex
+            justify-content: center !important
+        &__copy_wrap
+            display: flex
+            flex-direction: column
+            margin-bottom: 25px
+        &__copy_title
+            display: flex
+            justify-content: center !important
+        &__order
+            display: flex
+            justify-content: flex-end
+            margin-top: -45px !important
+        .footer_dn
+            display: none !important
+        .footer_db_load
+            display: flex !important
+            flex-direction: column
+        .footer_db_contact
+            display: flex !important
+            flex-direction: column
+            text-align: center
+            margin-top: 30px
+    .works
+        &__wrap
+            margin-top: 90px !important
+        &__title_info, &__title
+            color: #ffffff !important
+    
+    .our_works
+        padding-bottom: 46px !important
+        margin-top: -5px !important
+        &__service_wrap
+            display: none
+        .slider
+            display: flex !important
+        li
+            background-color: #C4C4C4
+            height: 15px
+            width: 15px
+            border-radius: 50%
+        ol
+            margin-bottom: -40px
+        &__service
+            height: 400px
+            display: grid !important
+            box-shadow: none !important
+        .carousel-item
+            //zoom: 145%
+            margin-top: 25px !important
+        .tablet
+            max-width: 65% !important
+            margin: 0 auto
+        .carousel-control-next, .carousel-control-prev
+            display: none
+        &__service_title, &__name
+            text-align: left
+    .header, .works, .our_works, .footer
+            background: linear-gradient(92.2deg, #3CCE92 0.34%, #4A80E4 111.97%) !important
+
+            margin: 0 auto
+@media screen and (max-width:765px)
+       .krest, .krest_dbl
+           display: none !important 
+
+@media screen and (max-width:700px)
+    .header
+        .btn-menu
+            width: 7%
+    .our_works
+        .tablet
+            max-width: 100% !important
+            margin-left: 5px;
+            margin-right: 5px;
+@media screen and (max-width:600px)
+    .header
+        &__info_dbl
+            display: flex !important
+            flex-direction: column !important
+            margin-top: 30px !important
+            margin-bottom: 30px !important
+        &__info
+            display: none !important
+        &__btn_wrap_load
+            display: flex
+            justify-content: center
+            padding-top: 30px
+        &__load_app_db
+            display: block
+        &__load_app, &__load_app_dbl
+            display: none !important
+        &__load_app_db
+            display: flex !important
+            font-family: ProximaNova, sans-serif;
+            font-size: 16px;
+            color: #ffffff
+
+@media screen and (max-width:575px)
+    .header
+        form
+            backdrop-filter: blur(15px);
+            background: rgba(196, 196, 196, 0.49) !important;
+            border-radius: 15px !important;
+        .dn_adress, .dn_pol, .dn_date
+            display: none !important    
+@media screen and (max-width:530px)
+    .works
+        &__wrap
+            width: 85%
+    .header
+        .btn-menu
+            width: 12% !important
+        form
+            background: linear-gradient(92.2deg, #3CCE92 0.34%, #4A80E4 111.97%) !important
+            font-size: 21px !important
+        &__number, &__info_form
+            display: none
+        &__number_dbl
+          
+            display: flex !important
+            justify-content: center
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            color: #ffffff
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            padding-bottom: 10px !important
+        &__info_client
+            font-size: 24px !important
+            padding-bottom: 0 !important
+        &__info_client_dbl
+            display: flex !important
+            color: #ffffff
+            padding-bottom: 10px !important
+        &__title_info
+            margin-top: 0 !important
+        &__info_client
+            display: none
+
+        &__wrap_title
+            padding-bottom: 110px !important
+            zoom: 85%
+        .btn-menu
+            width: 9% !important  
+        form
+            backdrop-filter: blur(15px);
+            background: rgba(196, 196, 196, 0.49) !important;
+            border-radius: 15px !important;
+
+@media screen and (max-width:510px)
+    .header
+        .toggle__label:after, .toggle__label:before
+            width: 39% !important
+            height: 60% !important
+     
+@media screen and (max-width:470px)
+    .footer
+        zoom: 80%
+@media screen and (max-width:420px)
+    .header
+        &__wrap_title
+            zoom: 75%
+
+@media screen and (max-width:400px)
+    .header
+        .btn-menu
+            width: 11% !important
+  
+@media screen and (max-width:375px) and (min-width:359px)
+    .header
+        &__db
+            padding-left: 20px !important
+            padding-right: 20px !important
+        &__text_center
+            text-align: center !important
+        &__load_app_db
+            width: 90%;
+            text-align: center;
+            margin: 0 auto !important
+    .footer
+        .container
+            max-width: 100% !important
+
+@media screen and (max-width:320px)
+    .header
+        &__wrap_title
+            zoom: 65%
+        &__load_app_db
+            text-align: center
+            zoom: 90%
+        &__db
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        &__recaptcha_wrap img
+            margin-right: 29px

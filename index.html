@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Arsenal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <section class="header">
+        <!--mobile nav start-->
+        <div class="mobile-wrap">
+            <div id="burg">
+                <a href="#" class="burg-span">
+                    <span class="bar" id="top"></span>
+                    <span class="bar" id="middle"></span>
+                    <span class="bar" id="bottom"></span>
+                </a>
+                <div class="header__logo_text">
+                    <span>Музыкальный Арсенал</span>
+                    <p>Мы работаем на ваш талант!</p>
+                </div>
+                <div class="header__cart_shop">
+                    <button type="button"><i class="fa fa-shopping-basket"></i><span>25</span></button>
+                </div>
+            </div>
+            <div class="mobile-tab">
+                <nav id="mobile">
+                    <ul class="mobile-item">
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">Музыкальные инструменты</a></li>
+                        <li><a href="">DJ</a></li>
+                        <li><a href="">Шоу-техника</a></li>
+                        <li><a href="">Студия</a></li>
+                        <li><a href="">Звук</a></li>
+                        <li><a href="">Свет</a></li>
+                        <li><a href="">Коммутация</a></li>
+                        <li><a href="">Стойки</a></li>
+                    </ul>
+                    <div class="mobile-info">
+                        <ul class="header__top_info">
+                            <li><a href="">Новосибирск ул. Октябрьская, 34</a></li>
+                        </ul>
+                        <ul class="header__top_info">
+                            <li><i class="fa fa-phone"></i><a href="tel:83832408080">(383) 240-80-80,</a>
+                                <a href="tel:83832408000">240-80-00</a></li>
+                        </ul>
+                        <ul class="header__top_info">
+                            <li><a href="">Как купить</a></li>
+                            <li><a href="">Гарантия</a></li>
+                            <li><a href="">Доставка</a></li>
+                        </ul>
+                        <ul class="header__top_info">
+                            <li><a href="">Мой арсенал</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__search">
+                    <div class="input-group">
+                        <input class="form-control py-2" type="search" placeholder="Поиск товаров"
+                            id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--mobile nav end-->
+
+        <!--desktop nav start-->
+        <div class="header__top_nav">
+            <div class="container">
+                <div class="row top-nav">
+                    <ul class="header__top_info">
+                        <li><a href="">Новосибирск ул. Октябрьская, 34</a></li>
+                    </ul>
+                    <ul class="header__top_info">
+                        <li><i class="fa fa-phone"></i><a href="tel:83832408080">(383) 240-80-80</a>,</li>
+                        <li><a href="tel:83832408000">240-80-00</a></li>
+                    </ul>
+                    <ul class="header__top_info">
+                        <li><a href="">Как купить</a></li>
+                        <li><a href="">Гарантия</a></li>
+                        <li><a href="">Доставка</a></li>
+                    </ul>
+                    <ul class="header__top_info">
+                        <li><a href="">Мой арсенал</a></li>
+                        <li><a href=""><i class="fa fa-vk"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__search_nav">
+            <div class="container">
+                <div class="row search-nav">
+                    <div class="header__logo_text">
+                        <span>Музыкальный Арсенал</span>
+                        <p>Мы работаем на ваш талант!</p>
+                    </div>
+                    <div class="header__search">
+                        <div class="input-group">
+                            <input class="form-control py-2" type="search" placeholder="Поиск товаров"
+                                id="example-search-input">
+                            <span class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="header__cart_shop">
+                        <button type="button"><i class="fa fa-shopping-basket"></i>Корзина<span>25</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="">Акции</a></li>
+                        <li><a href="">Музыкальные инструменты</a></li>
+                        <li><a href="">DJ</a></li>
+                        <li><a href="">Шоу-техника</a></li>
+                        <li><a href="">Студия</a></li>
+                        <li><a href="">Звук</a></li>
+                        <li><a href="">Свет</a></li>
+                        <li><a href="">Коммутация</a></li>
+                        <li><a href="">Стойки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--desktop nav end-->
+
+        <!--<div class="single-slide">
+            <div class="slide-one">
+                <div class="slide-wrap">
+                <p class="slide-title">Новинка</p>
+                <span class="slide-name">ARIA MAC-STD</span>
+                <p class="slide-info">Станьте ближе к любимой музыке вместе с P5 Series 2. У последней версии
+                    полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                    уровень, а материалы высокого качества обеспечивают комфорт. </p>
+                <img src="img/slide-1.png" alt=""></div>
+            </div>
+
+            <div><img src="img/slide-2.png" alt=""></div>
+        </div>-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slide-1.png" alt="" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <a href="">ARIA MAC-STD</a>
+                        <p>Станьте ближе к любимой музыке вместе с P5 Series 2. У последней версии
+                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                            уровень, а материалы высокого качества обеспечивают комфорт. </p>
+                        <div class="audio-play">
+                            <p>Воспроизвести звучание: </p>
+                            <audio controls>
+                                <source src="audio/music.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-1.png" alt="" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <a href="">ARIA MAC-STD</a>
+                        <p>Станьте ближе к любимой музыке вместе с P5 Series 2. У последней версии
+                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                            уровень, а материалы высокого качества обеспечивают комфорт. </p>
+                        <div class="audio-play">
+                            <p>Воспроизвести звучание: </p>
+                            <audio controls>
+                                <source src="audio/music.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-1.png" alt="" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>ARIA MAC-STD</h3>
+                        <p>Станьте ближе к любимой музыке вместе с P5 Series 2. У последней версии
+                            полностью обновлена конструкция динамиков, что подняло качество звука на новый
+                            уровень, а материалы высокого качества обеспечивают комфорт. </p>
+                        <div class="audio-play">
+                            <p>Воспроизвести звучание: </p>
+                            <audio controls>
+                                <source src="audio/music.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="multiple-items">
+                <div><img class="yamaha" src="img/yamaha.png" alt=""></div>
+                <div><img src="img/aria.png" alt=""></div>
+                <div><img src="img/jts.png" alt=""></div>
+                <div><img src="img/pioneer.jpg" alt=""></div>
+                <div><img class="robe" src="img/Robe.png" alt=""></div>
+                <div><img src="img/d'addario.png" alt=""></div>
+                <div><img src="img/schecter.png" alt=""></div>
+                <div><img src="img/pioneer.jpg" alt=""></div>
+            </div>
+            <div class="line"></div>
+            <div class="brand-link">
+                <a href="">Все производители</a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__title">
+                <p>Распродажа инструментов</p>
+            </div>
+            <div class="catalog__category_wrap">
+                <button type="button" class="catalog__category_btn active_one">Инструменты</button>
+                <button type="button" class="catalog__category_btn active_two">Свет</button>
+                <button type="button" class="catalog__category_btn active_three">Звук</button>
+                <button type="button" class="catalog__category_btn active_four">Уценка</button>
+            </div>
+            <div class="slider-for">
+                <div class="slide-product">
+                    <img src="img/bravo.png" alt="" class="bravo">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">Hohner Bravo III 96 RED</a>
+                            <p class="desktop-block">Аккордеон</p>
+                            <p class="mobile-block">Аккордеон, в стиле
+                                «Юнион Джек». Выпущен ограниченным тиражом. </p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/guitar.png" alt="" class="guitar">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">DBZ Halilfire</a>
+                            <p class="desktop-block">Электрогитара</p>
+                            <p class="mobile-block">Электрогитара, в стиле
+                                «Юнион Джек». Выпущена ограниченным тиражом. </p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/drum.png" alt="" class="drum">
+                    <div class="slide-product-info drum-top">
+                        <div class="slide-title-product">
+                            <a href="">Pearl Sparkle Burst</a>
+                            <p class="desktop-block">Малый барабан</p>
+                            <p class="mobile-block">Малый барабан MCX Masters Custom 14x5.5 (клен)</p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/piano.png" alt="" class="piano">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">Yamaha P-105B</a>
+                            <p class="desktop-block">Компактное электропиано</p>
+                            <p class="mobile-block">Компактное электропиано, оснащенное стерео- сэмплированными
+                                тембрами!</p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/guitar.png" alt="" class="guitar">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">DBZ Halilfire</a>
+                            <p class="desktop-block">Электрогитара</p>
+                            <p class="mobile-block">Электрогитара, в стиле
+                                «Юнион Джек». Выпущена ограниченным тиражом. </p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__link_product"><a href="">Все предложения</a><a href="">Подписаться на распродажи</a>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="brand-link">
+            <p>Услуги</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 sevices__info_wrap">
+                    <div class="services__info">
+                        <div class="services__img_info"><img src="img/delivery.png" alt=""><a href="">Доставка до
+                                дверей</a></div>
+                        <div class="services__text_info">
+                            <p>Цикл, в том числе, выстраивает пласт. Как мы уже знаем, форшлаг регрессийно образует
+                                звукорядный хорус.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 sevices__info_wrap">
+                    <div class="services__info">
+                        <div class="services__img_info"><img src="img/bass.png" alt=""><a href="">Установка и
+                                настройка</a></div>
+                        <div class="services__text_info">
+                            <p>Мы осуществляем проектирование и монтаж всего спектра поставляемого оборудования на любых
+                                типах объектов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 sevices__info_wrap">
+                    <div class="services__info">
+                        <div class="services__img_info"><img src="img/paint.png" alt=""><a href="">Продажа в кредит</a>
+                        </div>
+                        <div class="services__text_info">
+                            <p>Техника начинает лирический рок-н-ролл 50-х, благодаря употреблению микромотивов: нередко
+                                из одного звука, а также двух-трех с паузами.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 sevices__info_wrap">
+                    <div class="services__info">
+                        <div class="services__img_info"><img src="img/repair.png" alt=""><a href="">Ремонт и
+                                обслуживание</a></div>
+                        <div class="services__text_info">
+                            <p>Явление культурологического порядка, в первом приближении, самопроизвольно. Глиссандо
+                                варьирует мелодический шоу-бизнес.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 sevices__info_wrap">
+                    <div class="services__info">
+                        <div class="services__img_info"><img src="img/trade.png" alt=""><a href="">Обмен без проблем</a>
+                        </div>
+                        <div class="services__text_info">
+                            <p>Группа Компаний LTM осуществляет проектирование и монтаж всего спектра поставляемого
+                                оборудования на любых типах объектов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 sevices__info_wrap">
+                    <div class="services__info">
+                        <div class="services__img_info"><img src="img/card.png" alt=""><a href="">Подарочные карты</a>
+                        </div>
+                        <div class="services__text_info">
+                            <p>Ретро полифигурно просветляет звукосниматель, в таких условиях можно спокойно выпускать
+                                пластинки раз в три года.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stock">
+        <div class="container">
+            <div class="row">
+                <div class="stock__title">
+                    <p>Акции</p>
+                </div>
+            </div>
+            <div class="stock-slide">
+                <div class="slide-info-wrap">
+                    <div class="slide-info">
+                        <div class="stock-img">
+                            <img src="img/slide-stock-1.png" alt="">
+                        </div>
+                        <div class="stock-text">
+                            <a href="">Рассрочка без переплаты!</a>
+                            <p>В магазинах Музыкальный Арсенал до конца 2019 года Вы можете приобрести любой товар в
+                                рассрочку на 6 месяцев. 0% ПЕРЕПЛАТЫ! Первоначальный взнос 10%!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-info-wrap">
+                    <div class="slide-info">
+                        <div class="stock-img">
+                            <img src="img/slide-stock-2.png" alt="">
+                        </div>
+                        <div class="stock-text">
+                            <a href="">Арсеналу 5 лет!</a>
+                            <p>В магазинах Музыкальный Арсенал до конца 2019 года Вы можете приобрести любой товар в
+                                рассрочку на 6 месяцев. 0% ПЕРЕПЛАТЫ! Первоначальный взнос 10%!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-info-wrap">
+                    <div class="slide-info">
+                        <div class="stock-img">
+                            <img src="img/slide-stock-1.png" alt="">
+                        </div>
+                        <div class="stock-text">
+                            <a href="">Рассрочка без переплаты!</a>
+                            <p>В магазинах Музыкальный Арсенал до конца 2014 года Вы можете приобрести любой товар в
+                                рассрочку на 6 месяцев. 0% ПЕРЕПЛАТЫ! Первоначальный взнос 10%!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__link_product"><a href="">Все акции</a><a href="">Подписаться на акции</a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__title">
+                <p>Новинки</p>
+            </div>
+            <div class="slider-new-products">
+                <div class="slide-product">
+                    <img src="img/bravo-2.png" alt="" class="bravo">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">Hohner Bravo III 96 RED</a>
+                            <p class="desktop-block">Аккордеон</p>
+                            <p class="mobile-block">Аккордеон, в стиле
+                                «Юнион Джек». Выпущен ограниченным тиражом. </p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/guitar-2.png" alt="" class="guitar">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">ARIA PRO II IMPERIAL</a>
+                            <p class="desktop-block">Электрогитара</p>
+                            <p class="mobile-block">Электрогитара, в стиле
+                                «Юнион Джек». Выпущена ограниченным тиражом. </p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/truba.png" alt="" class="drum">
+                    <div class="slide-product-info drum-top">
+                        <div class="slide-title-product">
+                            <a href="">Amati AHR 332-O</a>
+                            <p class="desktop-block">Валторна</p>
+                            <p class="mobile-block">Валторна одинарная 4-х вентельная, лакированная.</p>
+                        </div>
+                        <div class="slide-price">
+                            <p>35 400</p>
+                            <span>31 400<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/truba-2.png" alt="" class="piano">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">Yamaha YTR-3335</a>
+                            <p class="desktop-block">Труба - флагман 3-й серии Yamaha.</p>
+                            <p class="mobile-block">Эта труба - флагман 3-й серии Yamaha. Обновленный дизайн, свежее
+                                звучание и улучшенная механика.</p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-product">
+                    <img src="img/guitar-2.png" alt="" class="guitar">
+                    <div class="slide-product-info">
+                        <div class="slide-title-product">
+                            <a href="">ARIA PRO II IMPERIAL</a>
+                            <p class="desktop-block">Электрогитара</p>
+                            <p class="mobile-block">Электрогитара, в стиле
+                                «Юнион Джек». Выпущена ограниченным тиражом. </p>
+                        </div>
+                        <div class="slide-price">
+                            <p>89 750</p>
+                            <span>83 550<i class="fa fa-rub"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__link_product"><a href="">Все новинки</a><a href="">Подписаться на новинки</a>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="news__title">
+                        <p>Новости</p>
+                    </div>
+                    <div class="news__info_wrap">
+                        <img src="img/news-1.png" alt="">
+                        <div class="news__info_text">
+                            <a href="">Мастер-класс Данила Прокопьева в Краснодаре</a>
+                            <p>Мастер-класс состоится 18 октября 2019 года в 15.30 в музыкальном центре SOROKA.</p>
+                            <span>18 июня 2019 г.</span>
+                        </div>
+                    </div>
+                    <div class="news__info_wrap">
+                        <img src="img/news-2.png" alt="">
+                        <div class="news__info_text">
+                            <a href="">Ирина Стачинская – официальный артист Powell</a>
+                            <p>С 6 лет, с момента поступления в музыкальный колледж имени Гнесиных, ее самым близким
+                                другом стала Флейта.</p>
+                            <span>18 июня 2019 г.</span>
+                        </div>
+                    </div>
+                    <div class="catalog__link_product">
+                        <a href="">Все новости</a>
+                        <a href="">Подписаться</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="news__title">
+                        <p>Обзоры</p>
+                    </div>
+                    <div class="news__info_wrap guitar-reviews">
+                        <img src="img/reviews-1.png" alt="">
+                        <div class="news__info_text">
+                            <a href="">Новые модели гитар Fina!</a>
+                            <p>Классическая гитара Fina FC-603 и электроакустическая гитара FR-82CEQ!</p>
+                            <span>18 июня 2019 г.</span>
+                        </div>
+                    </div>
+                    <div class="news__info_wrap guitar-reviews-two">
+                        <img src="img/reviews-2.png" alt="">
+                        <div class="news__info_text">
+                            <a href="">Гитары Spread Music в Музыкальном Арсенале</a>
+                            <p>В широком ассортименте товары для учащихся музыкальных школ: клавишные, духовые, струнные
+                                и ударные инструменты. </p>
+                            <span>18 июня 2019 г.</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="catalog__link_product">
+                            <a href="">Все обзоры</a>
+                            <a href="">Подписаться</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 footer__info">
+                    <p>© 2019 Музыкальный арсенал</p>
+                    <a href="">Правила использования сайта</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 footer__info">
+                    <a href="">Магазин в Новосибирске</a>
+                    <p>ул. Октябрьская, 34</p>
+                    <div><a href="tel:83832408080">(383) 240-80-80</a>, <a href="tel:83832408000">240-80-00</a></div>
+                    <p>Сегодня с 10:00 до 19:00</p>
+                    <div class="footer__social">
+                        <div class="footer__vk"><a href=""><i class="fa fa-vk"></i></a></div>
+                        <div class="footer__fb"><a href=""><i class="fa fa-facebook"></i></a></div>
+                        <div class="footer__inst"><a href=""><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 footer__info">
+                    <a href="">О компании</a>
+                    <a href="">Наша история</a>
+                    <a href="">Благодарности</a>
+                    <a href="">Партнерам</a>
+                    <a href="">Магазины</a>
+                    <a href="">Контакты</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-6 footer__info">
+                    <a href="">Эндорсеры</a>
+                    <a href="">Коллектив</a>
+                    <a href="">Вакансии</a>
+                    <a href="">Новости</a>
+                    <a href="">Обзоры</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-6 footer__info">
+                    <a href="">Акции</a>
+                    <a href="">Распродажи</a>
+                    <a href="">Товары</a>
+                    <a href="">Услуги</a>
+                    <a href="">Производители</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+                return false;
+            });
+        });
+
+        $('.mobile-tab').hide();
+
+        $('.burg-span').on('click', function () {
+            $('.mobile-tab').slideToggle(300);
+        });
+
+        $('.multiple-items').slick({
+            autoplay: true,
+            infinite: true,
+            dots: false,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+
+            ]
+        });
+        $('.slider-for').slick({
+            autoplay: true,
+            infinite: true,
+            dots: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
+        });
+        $('.slider-new-products').slick({
+            autoplay: true,
+            infinite: true,
+            dots: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+
+            ]
+        });
+        $('.stock-slide').slick({
+            autoplay: true,
+            infinite: true,
+            dots: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
